@@ -1,9 +1,24 @@
 {
-    "name": "galileo_example",
+    "name": "virginia-io",
+    "description": "a simple library for manipulating digital pins on the Intel Galileo using GPIO",
+    "keywoards": ["intel","galileo","gpio"],
+    "bugs": { "url" : "https://github.com/sajirdalas/virginia-io/issues"
+			, "email" : "sajirdalas@gmail.com"
+	},
+    "author": {
+    "name": "Alex Saladrigas",
+    "email": "sajirdalas@gmail.com"
+  },
+  "contributors": [
+    {
+        "name": "Michal Pawlowski",
+        "email": "misza@misza.co.uk"
+    }
+  ],
     "version": "0.0.1",
+    "main": "lib/virginia",
     "private": false,
     "dependencies": {
-        "galileo-io": ""
     }
 }
 
