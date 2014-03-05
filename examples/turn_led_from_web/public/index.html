@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Turn on/off LED from the website</title>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  </head>
+  <body>
+    <h1>Turn on/off LED from the website</h1>
+    <input type=button id=turnon value=TurnOn>
+    <input type=button id=turnoff value=TurnOff>
+  </body>
+  
+  <script>
+    var buttonClickOn = function() {
+      $.post("/nodebutton", { 'value': 1 });
+      console.log("Posting");
+    }
+    var buttonClickOff = function() {
+      $.post("/nodebutton", { 'value': 0 });
+      console.log("Posting");
+    }
+    
+    $(function() {
+      $("#turnon").click(buttonClickOn);
+      $("#turnoff").click(buttonClickOff);
+    });
+  </script>
+</html>
