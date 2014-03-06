@@ -8,7 +8,7 @@ app.use(express.urlencoded()); // to support URL-encoded bodies
 
 var intel = require('virginia-io');
 
-var led_pin    = 7;
+var led_pin    = virginia.digitalMapping[7];
 
 var options = {
     pins: [{
