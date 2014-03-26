@@ -51,7 +51,7 @@ virginia.eventEmitter.on('galileoConfigured', function(){
  //        console.log(val);
  //    });
 
-virginia.galileo.setButtonCallback(button,function(){
+virginia.galileo.setButtonCallback(button,function(val){
     console.log("event");
 });
 
