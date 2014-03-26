@@ -16,6 +16,9 @@
     }
   ],
     "version": "0.0.1",
-    "main": "lib/virginia"
+    "main": "lib/virginia",
+    "dependencies": {
+        "epoll": ""
+  }
 }
 
